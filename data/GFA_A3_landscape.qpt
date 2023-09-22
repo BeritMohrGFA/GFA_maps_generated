@@ -1,4 +1,4 @@
-<Layout units="mm" worldFileMap="" printResolution="300" name="IFRC_A3_landscape">
+<Layout units="mm" worldFileMap="" printResolution="300" name="GFA_A3_landscape">
  <Snapper snapToGuides="1" tolerance="5" snapToItems="1" snapToGrid="0"/>
  <Grid offsetUnits="mm" offsetX="0" offsetY="0" resUnits="mm" resolution="10"/>
  <PageCollection>
