@@ -1,25 +1,19 @@
 [general]
-name=SIMS Map Layouts
-description=Plugin for creating SIMS map layouts
-version=1.0.2
+name=GFA Map Layout
+description=Plugin for creating GFA map layouts
+version=1.0.0
 qgisMinimumVersion=3.10
 qgisMaximumVersion=3.99
-author=510, an initiative of The Netherlands Red Cross
-email=rnijssen@rodekruis.nl
+author= Berit Mohr
+email=berit.mohr@Gfa-group.de
 
-about=This plugin will make life easier for those who need to make RCRC SIMS maps. It will help getting the layout done in a fast and consistent way.
+about=This plugin will make life easier for those who wish to make Project GFA maps. It will help getting the layout done in a fast and consistent way.
 
-homepage=https://github.com/rodekruis/sims_maps_qgis_plugin
-repository=https://github.com/rodekruis/sims_maps_qgis_plugin
+homepage = https://github.com/BeritMohrGFA/GFA_maps_generated
+repository=https://github.com/BeritMohrGFA/GFA_maps_generated.git
 tracker=https://github.com/rodekruis/sims_maps_qgis_plugin/issues
 
-tags=sims,red,cross,510,map,layout
-
-# Uncomment the following line and add your changelog:
-changelog:
-    1.0.2   (02-2022) Adding images to QGIS project file, smarter layer data linking
-    1.0.1   (05-2019) new templates for A3, A2, A1 and A0 landscape
-    1.0.0   (01-2019) initial version
+tags=GFA,Developmenet Cooperation, map,layout
 
 icon=create_layout_crystal.svg
 
