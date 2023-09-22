@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Create SIMS Layout</string>
+   <string>Create GFA Layout</string>
   </property>
   <property name="modal">
    <bool>true</bool>

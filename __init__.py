@@ -61,7 +61,7 @@ class SimsMaps:
         self.logos.readFromCsv(os.path.join(self.dataPath, 'logos', 'logos.csv'))
         self.worldLayerPath = os.path.join(self.dataPath, 'sims_maps_resources.gpkg|layername=world_map')
         self.worldLayerId = None
-        self.layoutBaseName = 'sims_layout'
+        self.layoutBaseName = 'GFA_layout'
 
         self.addIconPath()
         self.colorScheme = QgsSimsColorScheme()
@@ -85,7 +85,7 @@ class SimsMaps:
 
 
     def tr(self, message):
-        return QCoreApplication.translate('SimsMaps', message)
+        return QCoreApplication.translate('GFAMaps', message)
 
 
     def initGui(self):
@@ -94,7 +94,7 @@ class SimsMaps:
         #QgsApplication.colorSchemeRegistry().addColorScheme(self.colorscheme)
         self.addColorScheme()
 
-        self.toolBar = self.iface.addToolBar('SIMS Maps')
+        self.toolBar = self.iface.addToolBar('GFA Maps')
         #self.toolButtonCreateLayout = QToolButton()
         #self.toolBar.addAction(self.toolButtonCreateLayout)
         icon = QIcon(os.path.join(self.pluginDir, 'create_layout_crystal.svg'))
@@ -193,7 +193,7 @@ class SimsMaps:
         #print(u'remove simsColorScheme')
         schemesToRemove = []
         for cs in QgsApplication.colorSchemeRegistry().schemes():
-            if cs.schemeName() in ['', 'SIMS Colors']:
+            if cs.schemeName() in ['', 'GFA Colors']:
                 schemesToRemove.append(cs)
         for cs in schemesToRemove:
             QgsApplication.colorSchemeRegistry().removeColorScheme(cs)
@@ -508,7 +508,7 @@ class SimsMaps:
 
         tb = designer.actionsToolbar()
         icon = QIcon(os.path.join(self.pluginDir, 'create_layout_crystal.svg'))
-        action = QAction(icon, self.tr('Edit SIMS Layout'), parent=designer)
+        action = QAction(icon, self.tr('Edit GFA Layout'), parent=designer)
         action.triggered.connect(partial(self.editTitleblock, designer))
         tb.addAction(action)
 
